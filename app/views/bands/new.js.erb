@@ -1,0 +1,6 @@
+// もしかして route: trueを行うとそのボタンから飛ぶcontroller名と同じfaile名のjsに飛ばすことができる？
+// link_toはhtmlにするとa要素になる為aを書く、現在はa要素を指定している為、parentでその親要素のdivをしていする。
+// html()でごっそり内容を変えているrenderをformにすることで_form.html.erbの内容にごっそり変えることができる
+// band: @bandにすると_form.html.erbの中のband変数に@bandを入れ込むことができる。現在はnewコントローラーにいる為@band = Band.newが定義されている、ajaxでページを呼んだときにbandが定義されていないことになってしまう。からband: @bandを行う
+
+$('#new-band a').parent().html("<%= j render 'form', band: @band %>")
