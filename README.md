@@ -1,7 +1,6 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby on Rails 上で　新規投稿フォームをAJAXで表示し、投稿までを行う
 
 Things you may want to cover:
 
